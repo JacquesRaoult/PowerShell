@@ -1,17 +1,17 @@
 # PowerShell
 Custom scripts for PowerShell
 
-1. Open PowerShell profile :
+1. Open PowerShell profile
 ```
 notepad $PROFILE
 ```
 
-2. If not existing create it :
+2. If not existing create it
 ```
 New-Item -Path $PROFILE -Type File -Force
 notepad $PROFILE
 ```
-3. Tree function for Node.js projects
+3. Add tree function for Node.js projects
 ```
 function nodeTree {
     $basePath = (Get-Location).Path
@@ -37,4 +37,8 @@ function nodeTree {
     Write-Host "."
     Show-TreeRecursive $basePath ""
 }
+```
+4. Save and reload profile
+```
+. $PROFILE
 ```
