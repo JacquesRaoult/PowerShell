@@ -1,5 +1,5 @@
 # PowerShell
-### Custom functions for PowerShell
+### Custom functions for [PowerShell](https://github.com/PowerShell/PowerShell)
 
 1. Open PowerShell profile
 ```
