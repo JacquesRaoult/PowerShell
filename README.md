@@ -1,5 +1,5 @@
 # PowerShell
-Custom scripts for PowerShell
+### Custom scripts for PowerShell
 
 1. Open PowerShell profile
 ```
