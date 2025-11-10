@@ -3,7 +3,7 @@ Custom scripts for PowerShell
 
 1. Ouvrir le profil PowerShell :
 ```
-# notepad $PROFILE
+notepad $PROFILE
 ```
 
 2. Sinon le creer :
