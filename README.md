@@ -9,5 +9,5 @@ notepad $PROFILE
 2. Sinon le creer :
 ```
 New-Item -Path $PROFILE -Type File -Force
-Notepad $PROFILE
+notepad $PROFILE
 ```
