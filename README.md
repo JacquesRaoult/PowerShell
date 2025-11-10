@@ -11,7 +11,7 @@ notepad $PROFILE
 New-Item -Path $PROFILE -Type File -Force
 notepad $PROFILE
 ```
-3. Copy/paste functions from this repository to profile
+3. Copy / paste functions from this repository to profile
 4. Save and reload profile
 ```
 . $PROFILE
