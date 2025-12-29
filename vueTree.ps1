@@ -1,11 +1,13 @@
 function vueTree {
     $basePath = (Get-Location).Path
+    $excludedFiles = @('eslint.config.js', 'jsconfig.json', 'README.md', 'vite.config.js')
+    
     function Show-TreeRecursive([string]$Path, [string]$Prefix = "") {
         $items = Get-ChildItem -Path $Path -Force -ErrorAction SilentlyContinue |
                  Where-Object {
                      -not ($_.Name -match '^(node_modules)$') -and
                      -not ($_.Name -match '^\.')  -and
-                     -not ($_.Name -match '^(eslint\.config\.js|jsconfig\.json|README\.md|vite\.config\.js)$')
+                     -not ($excludedFiles -contains $_.Name)
                  } |
                  Sort-Object { -not $_.PSIsContainer }, Name  # Dossiers avant fichiers
         $count = $items.Count
